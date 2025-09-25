@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio aing</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Syantique</h1>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+<!-- Home Section -->
+<section id="hero">
+  <div class="hero-content">
+    <h2>Halo Everyone!</h2>
+      <h2>I’m <span class="highlight">Nafisa Nurin Salsabila</span></h2>
+      <p><span id="typing"></span></p>
+
+    <!-- Tombol Download CV -->
+    <a href="cv.png" class="btn">Download My CV</a>
+
+    <!-- Ikon Sosial Media -->
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/nafisa-nurin-salsabila-257703330" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://wa.me/6287766623956" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.instagram.com/fisaa.sa/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/prettyreaders" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </div>
+</section>
+
+
+<!-- About Section -->
+<section id="about" class="reveal">
+  <div class="about-container">
+    <!-- Kiri: Foto -->
+    <div class="about-left">
+      <img src="aboutme.jpg" alt="Nafisa Nurin Salsabila Profile Photo">
+    </div>
+
+    <!-- Kanan: Penjelasan + Skills -->
+    <div class="about-right">
+      <h2>About Me</h2>
+      <p>
+        Saya Nafisa, mahasiswa Informatika yang tertarik pada dunia 
+        <strong>Web Development, IoT,</strong> dan <strong>Cyber Security</strong>. 
+        Saya suka membuat proyek kreatif, belajar teknologi baru, dan 
+        membangun aplikasi yang bermanfaat sekaligus estetik.
+      </p>
+
+      <!-- Skills Sub-section -->
+      <div class="skills">
+        <h3>My Skills</h3>
+        <div class="skills-grid">
+          <div class="skill-card"><img src="python.png" alt="Python" title="Python"></div>
+          <div class="skill-card"><img src="cpp.png" alt="C++" title="C++"></div>
+          <div class="skill-card"><img src="csharp.png" alt="C#" title="C#"></div>
+          <div class="skill-card"><img src="javascript.png" alt="JavaScript" title="JavaScript"></div>
+          <div class="skill-card"><img src="postgre.png" alt="PostgreSQL" title="PostgreSQL"></div>
+          <div class="skill-card"><img src="html.png" alt="HTML5" title="HTML5"></div>
+          <div class="skill-card"><img src="css.png" alt="CSS3" title="CSS3"></div>
+          <div class="skill-card"><img src="golang.png" alt="Golang" title="Golang"></div>
+          <div class="skill-card"><img src="word.png" alt="Microsoft Word" title="Word"></div>
+          <div class="skill-card"><img src="excel.png" alt="Microsoft Excel" title="Excel"></div>
+          <div class="skill-card"><img src="ppt.png" alt="PowerPoint" title="PowerPoint"></div>
+          <div class="skill-card"><img src="canva.png" alt="Canva" title="Canva"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="reveal">
+  <h2>Portfolio</h2>
+
+  <!-- Sub-navbar -->
+  <div class="sub-nav">
+    <button class="sub-link active" onclick="showSubSection('projects')">Projects</button>
+    <button class="sub-link" onclick="showSubSection('certificates')">Certificates</button>
+  </div>
+
+  <!-- Projects Sub-section -->
+  <div id="projects" class="sub-section active">
+    
+    <div class="project-card">
+      <img src="projek.png" alt="Project 1">
+      <div class="project-info">
+        <h3>Sistem manajemen donor darah berbasis digital pada PMI Jember</h3>
+        <p>Proyek website manajemen donor darah PMI memudahkan pengelolaan data pendonor, 
+          stok darah, event donor keliling, dan laporan. Fitur pencarian stok darah menggunakan filtering dan sorting untuk menampilkan kantong darah sesuai kebutuhan, 
+          sementara pengingat jadwal donor otomatis membantu melihat pendonor yang siap mendonor kembali, sehingga pengelola dapat merencanakan donor dengan lebih efisien.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="servo.png" alt="Project 2">
+      <div class="project-info">
+        <h3>Proyek Mini: Servo Otomatis dengan Alarm Buzzer</h3>
+        <p>Proyek ini menggunakan Arduino, sensor ultrasonik, servo, dan buzzer untuk membuat sistem otomatis yang dapat membuka/menutup servo berdasarkan jarak objek yang terdeteksi, sekaligus menyalakan buzzer sebagai alarm. Sistem ini dapat diaplikasikan sebagai pintu otomatis, palang parkir, atau tempat sampah pintar.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Certificates Sub-section -->
+  <div id="certificates" class="sub-section">
+    <div class="cert-grid">
+      
+      <div class="cert-card">
+        <img src="sertifrobotik_page-0001.jpg" alt="Certificate 1">
+        <h3>C++ Dasar & Robotik</h3>
+      </div>
+
+      <div class="cert-card">
+        <img src="sertiflinux_page-0001.jpg" alt="Certificate 2">
+        <h3>Linux Fundamental</h3>
+      </div>
+
+      <div class="cert-card">
+        <img src="fake.jpeg" alt="Certificate 3">
+        <h3>Cooming Soon</h3>
+      </div>
+
+    </div>
+  </div>
+
+
+
+<!-- Contact Section -->
+<section id="contact" class="reveal">
+  <h2 class="contact-title">Contact Me</h2>
+  
+  <div class="contact-container">
+    <!-- Kiri: Info -->
+    <div class="contact-info">
+      <p>
+        Let’s connect and build something awesome together   
+  Reach me via email or social media below.
+      </p>
+
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <div>
+          <strong>Email</strong><br>
+          <a href="mailto:salsanafisa67@gmail.com">salsanafisa67@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <i class="fab fa-instagram"></i>
+        <div>
+          <strong>Instagram</strong><br>
+          <a href="https://www.instagram.com/fisaa.sa/" target="_blank">@fisaa.sa</a>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <i class="fab fa-linkedin"></i>
+        <div>
+          <strong>LinkedIn</strong><br>
+          <a href="https://www.linkedin.com/in/nafisa-nurin-salsabila-257703330" target="_blank">Nafisa Nurin Salsabila</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kanan: Form -->
+    <div class="contact-form">
+      <form>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Your Email" required>
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" placeholder="Subject" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="6" placeholder="Your Message" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+  <footer>
+    <p>© Copyright <strong>Nafisacanss</strong>. All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
